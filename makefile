@@ -1,11 +1,11 @@
 all: README_edit
 
 README_edit: README.md guessinggame.sh
-	echo "# Project name"
-	echo "##Coursera The Unix Workbench"
+	echo "# Project: Coursera The Unix Workbench"
 	echo "## guessing_game_in_unix_bash" >> README.md
-	echo "# make date"
-	date >> README.md
+	echo "make date is **`date`**" >> README.md
 	echo '' >>README.md
-	echo "#How many lines of code in the guessinggame.sh" >>README.md
-	wc -l <guessinggame.sh >> README.md
+	echo "There are **`cat guessinggame.sh|wc -l`** lines of code in the guessinggame.sh" >>README.md
+
+clean:
+	rm -vf README.md
