@@ -8,4 +8,4 @@ README_edit: README.md guessinggame.sh
 	date >> README.md
 	echo '' >>README.md
 	echo "#How many lines of code in the guessinggame.sh" >>README.md
-	wc -l guessinggame.sh >> README.md
+	wc -l <guessinggame.sh >> README.md
